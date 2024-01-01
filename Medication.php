@@ -122,6 +122,27 @@ $filteredList = array_filter($liste, function($medicament) use ($searchQuery) {
         <!-- BOOTSTRAP -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+   
+   let menuToggle = document.querySelector('.toggle');
+   let navigation = document.querySelector('.navigation')
+   menuToggle.onclick = function(){
+       menuToggle.classList.toggle('active');
+       navigation.classList.toggle('active');
+   }
+   //add active class in selected list item   window.alert("Hello Koautar!");
+    //alert("Hello Kaoutar!");
+    let list = document.querySelectorAll('.list');
+   for(let i=0; i<list.length ;i++){
+       list[i].onclick = function(){
+           let j=0;
+           while(j < list.length){
+              list[j++].className= 'list';
+           }
+           list[i].className = 'list active';
+       }
+   }
+</script>
       </div>
  </body>
 </html>

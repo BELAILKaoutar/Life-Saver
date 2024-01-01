@@ -17,8 +17,8 @@ body{
     width: 65px;
     border-top-right-radius: 10px;
     box-sizing: initial;
-    border-left: 5px solid #acc6aa ;
-    background: #acc6aa;
+    border-left: 5px solid #1B1464 ;
+    background: #1B1464;
     transition: width  0.5s;
     overflow: hidden;
 }
@@ -85,7 +85,7 @@ body{
     width: 100%;
     height: 100%;
     border-bottom-right-radius: 20px;
-    background: #acc6aa;
+    background: #1B1464;
 }
 .navigation ul li b:nth-child(2){
     position: absolute;
@@ -103,7 +103,7 @@ body{
     width: 100%;
     height: 100%;
     border-top-right-radius: 20px;
-    background: #acc6aa;
+    background: #1B1464;
 }
 .navigation ul li.active b:nth-child(1),
 .navigation ul li.active b:nth-child(2){
@@ -164,7 +164,7 @@ body{
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #acc6aa;
+    background: #1B1464;
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -173,7 +173,7 @@ body{
 }
 
 .toggle.active{
-   background: #acc6aa ; 
+   background: #a5b1c2 ; 
 }
 .toggle ion-icon{
     position: absolute;
@@ -189,25 +189,15 @@ body{
 .toggle.active ion-icon.open{
     display: none;
 }
+
 .main-top{
     display: flex;
     width: 100%;
     bottom: 200px;
   }
-.main-top h2{
-    position:relative ;
-    color: #acc6aa;
-    top: 10px;
-    text-transform: capitalize;
-    right: 790px;
-   /* right: 780px;*/
-    margin: 20px  38px 40px ;
-    align-items: center;
-    display: flex;
-}
 .main-top h1{
     position:absolute ;
-    color: #acc6aa;
+    color: #1B1464;
     top: 20px;
     text-transform: capitalize;
     right: 790px;
@@ -216,8 +206,64 @@ body{
     align-items: center;
     display: flex;
 }
+ .main .users{
+    display: flex;
+    width: 100%;
 
-.titre{
-    color: #acc6aa;
-    background-color: #acc6aa;
+ }
+
+.users .car{
+    width: 320px;
+    background:#8fa4c2;
+    text-align: center;
+    border-radius: 40px;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+   /* margin-top: 550px;
+    margin-right: 10px;
+    left: 2px;
+    bottom: 100px;
+     hadi n9astha*/
+    margin: 1400px  20px 650px;
+    margin-right: 1px;
+    margin-left: 2px;
+    margin-top: 1200px;
+   /*  padding-bottom: 20px;
+    padding-top: 20px;*/
+} 
+.users .car img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+.users .car h4{
+    text-transform: uppercase;
+    margin: 20px;
 }
+.users .car h5{
+    text-transform: uppercase;
+}
+.users .car p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.users .car button{
+    width: 50%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #1B1464;
+  }
+.users .car button:hover{
+    background:#1B1464;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+
+
+

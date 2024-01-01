@@ -152,7 +152,7 @@
 
     .background {
         position: relative;
-        height: 100vh;
+        height: 90vh; /* Réduisez la hauteur */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -172,7 +172,7 @@
     }
 
     .content {
-        max-height: 500px; /* Adjust the max height as needed */
+        max-height: 500px; /* Ajustez la hauteur maximale si nécessaire */
         overflow: hidden;
     }
 
@@ -180,23 +180,30 @@
         display: flex;
         justify-content: flex-end;
         margin-bottom: 10px;
-        margin-top: 400px;
-        padding-left: 200px;
+        margin-top: 200px; /* Ajustez la marge supérieure */
+        padding-left: 150px; /* Ajustez le décalage vers la droite */
     }
 
     .signature-image {
-        max-width: 150px;
+        max-width: 100px; /* Réduisez la taille de l'image de la signature */
     }
 
-    #download {
-        position: relative;
-        color: #acc6aa;
-    }
+#download {
+    position: relative;
+    color: #acc6aa;
+}
+
+.adresse > h3 {
+    font-size: 13px; /* Réduisez la taille de la police pour l'adresse */
+    margin: 10px 0px 0px 10px; /* Ajustez la marge de l'adresse */
+}
     .bold-hr{
     height: 3px;
     font-weight: bold;
     color: #19A7CE;
   }
+
+
 </style>
 
 <script>

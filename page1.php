@@ -23,19 +23,19 @@
                     <span class="nav-item">Dashboard</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list ">
                 <b></b>
                 <b></b>
                 <a href="patient.php" >
-                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                     <span class="nav-item">Patients</span>
                 </a>
             </li>
-            <li class="list">
+            <li class="list ">
                 <b></b>
                 <b></b>
                 <a href="medecin.php" >
-                    <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                     <span class="nav-item">Medecins</span>
                 </a>
             </li>
@@ -43,7 +43,7 @@
                 <b></b>
                 <b></b>
                 <a href="Medication.php" >
-                    <span class="icon"><ion-icon name="ticket-outline"></ion-icon></span>
+                    <span class="icon"><ion-icon name="ban-outline"></ion-icon></span>
                     <span class="nav-item">Medicaments</span>
                 </a>
             </li>
@@ -51,8 +51,8 @@
                 <b></b>
                 <b></b>
                 <a href="ordonnance.php" >
-                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                    <span class="nav-item">Ordonnance</span>
+                    <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+                    <span class="nav-item">Ordonnances</span>
                 </a>
             </li>
             <li class="list">
@@ -150,7 +150,27 @@
 </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script>
+   
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation')
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+        //add active class in selected list item   window.alert("Hello Koautar!");
+         //alert("Hello Kaoutar!");
+         let list = document.querySelectorAll('.list');
+        for(let i=0; i<list.length ;i++){
+            list[i].onclick = function(){
+                let j=0;
+                while(j < list.length){
+                   list[j++].className= 'list';
+                }
+                list[i].className = 'list active';
+            }
+        }
+     </script>
 </body>
 </html>
 

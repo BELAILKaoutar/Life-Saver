@@ -141,14 +141,16 @@ $medications = Medicament::listeMedicaments(); // Use a different variable name
                 ?>
             </tbody>
         </table>
+      <button id="submit" type="submit" value="Ajouter Ordonnance" name="submit"> Ajouter Ordonnance</button>
+      
     </form>
 
      
-<button id="submit" type="button" value="Ajouter Ordonnance" name="submit"> Ajouter Ordonnance</button>
 </div>
     </div>  
 
 </div>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
