@@ -76,9 +76,8 @@
 
 <!---->
 <div class=" main-top">      
-<h2>We are providing</h2>
 <br>
-<h1>Best Medical Services</h1>
+<h1>We are providing Best Medical Services</h1>
 </div>
 
 <br>
@@ -131,6 +130,34 @@
 .toggle.active ion-icon.open{
     display: none;
 }
+.main-top{
+    display: flex;
+    width: 100%;
+    bottom: 200px;
+  }
+.main-top h2{
+    position:relative ;
+    color: #acc6aa;
+    top: 10px;
+    text-transform: capitalize;
+    right: 790px;
+   /* right: 780px;*/
+    margin: 20px  38px 40px ;
+    align-items: center;
+    display: flex;
+}
+.main-top h1{
+    position:absolute ;
+    color: #acc6aa;
+    top: 20px;
+    text-transform: capitalize;
+    right: 790px;
+   /* right: 780px;*/
+    margin: 20px  38px 40px ;
+    align-items: center;
+    display: flex;
+}
+
     .image{
     position: center;
     width: 320px;
